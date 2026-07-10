@@ -37,7 +37,7 @@ const protect = async (req, res, next) => {
       }
 
       return next(); // all good — continue to the actual route handler
-    } catch (err) {
+    } catch {
       return res.status(401).json({ error: "Not authorized, token failed" });
     }
   }

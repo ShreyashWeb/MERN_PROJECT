@@ -9,7 +9,7 @@ const {
     deleteWood,
 } = require("../controller/woodController");
 
-const { protect, adminOnly } = require("../middleware/auth");
+const { protect } = require("../middleware/auth");
 
 router.use(protect);
 router.post("/", createWood); // Create a new wood entry

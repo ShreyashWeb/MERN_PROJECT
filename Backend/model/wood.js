@@ -42,7 +42,7 @@ const woodSchema = new mongoose.Schema(
         },
         image: {
             type: String,
-            required: [true, "Image URL is required"],
+            default: "https://images.unsplash.com/photo-1540206351-d4469042c130?w=800",
             trim: true
         }
     },

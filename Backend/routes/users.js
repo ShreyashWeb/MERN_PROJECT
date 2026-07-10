@@ -9,7 +9,7 @@ const {
     deleteUser,
 } = require("../controller/userController");
 
-const { protect, adminOnly } = require("../middleware/auth");
+const { protect } = require("../middleware/auth");
 
 /**
  * All user routes below require a logged-in user.
