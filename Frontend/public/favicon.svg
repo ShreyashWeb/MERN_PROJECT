@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+  <!-- Green Pine Tree layers -->
+  <polygon points="12,2 4,10 8,10 3,16 9,16 2,22 22,22 15,16 21,16 16,10 20,10" fill="#2d6a4f"/>
+  <!-- Brown Trunk -->
+  <rect x="11" y="22" width="2" height="2" fill="#5c4033"/>
+</svg>
