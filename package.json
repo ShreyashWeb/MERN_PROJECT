@@ -6,6 +6,8 @@
     "install:all": "npm install --prefix Backend && npm install --prefix Frontend",
     "dev:backend": "npm run dev --prefix Backend",
     "dev:frontend": "npm run dev --prefix Frontend",
-    "dev": "npx concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\""
+    "dev": "npx concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\"",
+    "prebuild": "npm install --prefix Frontend",
+    "build": "npm run build --prefix Frontend"
   }
 }
