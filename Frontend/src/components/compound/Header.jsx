@@ -1,6 +1,6 @@
 
 import { Home, Trees, MapPin, Mail, Settings, LogOut, LogIn } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
@@ -26,35 +26,35 @@ function Header() {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <a href="/" className={isActive("/")}>
+            <Link to="/" className={isActive("/")}>
               <Home size={20} />
               <span>Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className={isActive("/about")}>
+            <Link to="/about" className={isActive("/about")}>
               <MapPin size={20} />
               <span>About</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/woods" className={isActive("/woods")}>
+            <Link to="/woods" className={isActive("/woods")}>
               <Trees size={20} />
               <span>Woods</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" className={isActive("/contact")}>
+            <Link to="/contact" className={isActive("/contact")}>
               <Mail size={20} />
               <span>Contact</span>
-            </a>
+            </Link>
           </li>
           {isLoggedIn && (
             <li>
-              <a href="/cms" className={isActive("/cms")}>
+              <Link to="/cms" className={isActive("/cms")}>
                 <Settings size={20} />
                 <span>CMS</span>
-              </a>
+              </Link>
             </li>
           )}
         </ul>
@@ -67,10 +67,10 @@ function Header() {
             <span>Logout</span>
           </button>
         ) : (
-          <a href="/login" className="btn btn-login">
+          <Link to="/login" className="btn btn-login">
             <LogIn size={18} />
             <span>Login</span>
-          </a>
+          </Link>
         )}
       </div>
     </header>

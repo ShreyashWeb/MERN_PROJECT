@@ -1,4 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,10 +15,10 @@ function Footer() {
 
         <div className="footer-links">
           <h3>Quick Links</h3>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/woods">Woods</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/woods">Woods</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-contact">
